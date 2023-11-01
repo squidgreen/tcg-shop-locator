@@ -17,10 +17,10 @@ class SellerInfo:
     location: str
 
     def __repr__(self):
-        return f"SellerInfo({self.shop}, {self.hyperlink}, {str(self.rating)}, {str(self.num_sales)}, {self.location})"
+        return f"SellerInfo({self.shop},{self.hyperlink},{str(self.rating)},{str(self.num_sales)},{self.location})"
     
     def __str__(self):
-        return f"{self.shop}, {self.hyperlink}, {str(self.rating)}, {str(self.num_sales)}, {self.location}"
+        return f"{self.shop},{self.hyperlink},{str(self.rating)},{str(self.num_sales)},{self.location}"
 
 def get_tcgplayer_pages() -> List[str]:
     """
